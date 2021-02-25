@@ -41,27 +41,30 @@ void main() {
 }
 
 /* Add other Implementation File Code Here */
+void print_statistics(unsigned char *array_, unsigned int nElements){
+  return;
+}
 
-// print_statistics()
-// A function that prints the statistics of an array including minimum,
-//  maximum, mean, and median.
+void print_array(unsigned char *array_, unsigned int nElements){
+  return;
+}
 
-// print_array()  
-// Given an array of data and a length, prints the array to the screen
+float find_median(unsigned char *array_, unsigned int nElements){
+  return 0.0;
+}
 
-// find_median()
-// Given an array of data and a length, returns the median value
+float find_mean(unsigned char *array_, unsigned int nElements){
+  return 0.0;
+}
 
-// find_mean()
-// Given an array of data and a length, returns the mean
+unsigned char find_maximum(unsigned char *array_, unsigned int nElements){
+  return 0;
+}
 
-// find_maximum()
-// Given an array of data and a length, returns the maximum
+unsigned char find_minimum(unsigned char *array_, unsigned int nElements){
+  return 0;
+}
 
-// find_minimum()
-// Given an array of data and a length, returns the minimum
-
-// sort_array()
-// Given an array of data and a length, sorts the array from largest to smallest. 
-//  (The zeroth Element should be the largest value, and the last element (n-1) 
-//  should be the smallest value. )
+void sort_array(unsigned char *array_, unsigned int nElements){
+  return;
+}
