@@ -31,10 +31,8 @@
  *
  * @param array_ pointer to char array containing the data 
  * @param nElements number of elements in the array
- *
- * @return void
  */
-void print_statistics(unsigned char* array_, unsigned int nElements);
+void print_statistics(uint8_t* array_, uint8_t nElements);
 
 /**
  * @brief Print array content
@@ -43,10 +41,8 @@ void print_statistics(unsigned char* array_, unsigned int nElements);
  *
  * @param array_ pointer to char array containing the data 
  * @param nElements number of elements in the array
- *
- * @return void
  */
-void print_array(unsigned char* array_, unsigned int nElements);
+void print_array(uint8_t* array_, uint8_t nElements);
 
 /**
  * @brief Retrun median array value
@@ -58,7 +54,7 @@ void print_array(unsigned char* array_, unsigned int nElements);
  *
  * @return median value (float)
  */
-float find_median(unsigned char *array_, unsigned int nElements);
+float find_median(uint8_t* array_, uint8_t nElements);
 
 /**
  * @brief Retrun mean array value
@@ -70,7 +66,7 @@ float find_median(unsigned char *array_, unsigned int nElements);
  *
  * @return mean value (float)
  */
-float find_mean(unsigned char *array_, unsigned int nElements);
+float find_mean(uint8_t*array_, uint8_t nElements);
 
 /**
  * @brief Retrun max array value
@@ -82,7 +78,7 @@ float find_mean(unsigned char *array_, unsigned int nElements);
  *
  * @return max value
  */
-unsigned char find_maximum(unsigned char *array_, unsigned int nElements);
+uint8_t find_maximum(uint8_t* array_, uint8_t nElements);
 
 /**
  * @brief Retrun min array value
@@ -94,7 +90,7 @@ unsigned char find_maximum(unsigned char *array_, unsigned int nElements);
  *
  * @return min value
  */
-unsigned char find_minimum(unsigned char *array_, unsigned int nElements);
+uint8_t find_minimum(uint8_t* array_, uint8_t nElements);
 
 /**
  * @brief Retrun min array value
@@ -105,10 +101,8 @@ unsigned char find_minimum(unsigned char *array_, unsigned int nElements);
  *
  * @param array_ pointer to char array containing the data 
  * @param nElements number of elements in the array
- *
- * @return min value
  */
-void sort_array(unsigned char* array_, unsigned int nElements);
+void sort_array(unsigned char* array_, uint8_t nElements);
 
 
 #endif /* __STATS_H__ */

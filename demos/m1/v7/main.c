@@ -10,11 +10,32 @@
  *****************************************************************************/
 
 #include <stdio.h>
-/* A pretty boring main file */
+
+// #define KL25_PLATFROM
+// #define MSP_PLATFORM
+
+// #pragma GCC poison printf
+
+#ifndef SERIAL_PORT
+#define SERIAL_PORT "NOT_PROVIDED"
+#endif
+
+const char *port = SERIAL_PORT;
+
+#if defined(KL25_PLATFROM) && !defined(MSP_PLATFORM)
+  // kl25_init();
+#elif defined(MSP_PLATFORM) && !defined(KL25_PLATFROM)
+  // msp_init();
+#else
+  #error "Plaese specify one platfrom target"
+#endif
+
+#define SQUARE(x) (x * x)
+
 int main(void){
 
   printf("\nModule Demo File!\n");
-
+  printf("I have the best of serial ports: %s\n", port);
   return 0;
 }
 
